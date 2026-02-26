@@ -1,6 +1,7 @@
 # a called to `_pure_prompt_new_line` is triggered by an event
 function fish_prompt
     set --local exit_codes $pipestatus # save previous exit codes
+    echo -e -n (_pure_prompt_start_symbol $exit_codes)
 
     # Handle transient prompt (Fish 4.1.0+)
     # When --final-rendering is passed, show simplified prompt for scrollback
