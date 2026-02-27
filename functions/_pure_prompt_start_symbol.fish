@@ -15,7 +15,5 @@ function _pure_prompt_start_symbol \
         end
     end
 
-    if test "$pure_symbol_start" != ""
-        echo "$symbol_color$pure_symbol_start "
-    end
+    echo "$symbol_color$pure_symbol_start"
 end
